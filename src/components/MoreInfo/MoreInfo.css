@@ -1,0 +1,210 @@
+.MoreInfo {
+  padding-left: 10px;
+  padding-right: 10px;
+  /* display: none; */
+  position: relative;
+}
+
+.hourly-weather-list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: left;
+  padding-bottom: 36px;
+}
+
+.hourly-weather-item {
+  padding: 15px;
+  font-size: 16px;
+  font-family: 'Lato';
+  color: rgba(255, 255, 255, 0.541);
+  text-align: center;
+  border: solid 1px rgb(255, 255, 255, 0.2);
+  border-radius: 25px;
+  width: 120px;
+  margin-right: 20px;
+}
+
+.hourly-weather-item:hover {
+  background-color: rgb(255, 255, 255, 0.12);
+}
+
+.hourly-weather-item:last-child {
+  margin-right: 0;
+}
+
+
+.hourly-weather-item__set-img {
+  pointer-events: none;
+  margin: 0 auto;
+}
+
+.hourly-weather-item__set-temperature {
+  display: inline-block;
+  font-size: 18px;
+  font-family: 'Lato';
+  color: rgb(255, 107, 8);
+  font-weight: bold;
+  pointer-events: none;
+
+}
+
+.hourly-weather-item__weather-details {
+  width: 88px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: none;
+
+}
+
+.hourly-weather-item__set-time {
+  color: #fff;
+}
+
+.hourly-weather-item__pressure-value::before,
+.hourly-weather-item__humidity-value::before,
+.hourly-weather-item__wind-value::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-right: 4px;
+}
+
+.hourly-weather-item__pressure-value::before {
+  background-image: url(./img/pressure.png);
+}
+
+.hourly-weather-item__humidity-value::before {
+  background-image: url(./img/humidity.png);
+  margin-left: 5px;
+}
+
+.hourly-weather-item__wind-value::before {
+  background-image: url(./img/wind.png);
+}
+
+.hourly-weather-item__pressure-value,
+.hourly-weather-item__humidity-value,
+.hourly-weather-item__wind-value {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.hourly-weather-btns {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hourly-weather-prev-btn:hover,
+.hourly-weather-next-btn:hover,
+.hourly-weather-close:hover {
+  background-color: rgb(255, 255, 255, 0.5);
+  color: #fff;
+}
+
+.hourly-weather-prev-btn,
+.hourly-weather-next-btn {
+  border-radius: 50%;
+  border: none;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+.hourly-weather-prev-btn {
+  margin-right: 5px;
+}
+
+.hourly-weather-next-btn {
+  margin-left: 5px;
+}
+
+.visually {
+  display: flex;
+  justify-content: left;
+}
+
+.gallery {
+  padding-top: 20px;
+  overflow: hidden;
+  display: none;
+}
+
+.hourly-weather-close {
+  display: none;
+  text-align: center;
+  width: 24px;
+  height: 18px;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  outline: none;
+}
+
+@media (min-width: 768px){
+  .hourly-weather-item {
+margin-right: 33px;
+  }
+}
+
+
+
+@media (min-width: 1280px) {
+  .hourly-weather-item {
+    margin-right: 10px;
+  }
+
+  .hourly-weather-btns {
+    display: none;
+  }
+
+  .hourly-weather-list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* class for the day  */
+
+.coloredDay {
+  background-color:rgb(255, 255, 255, 0.12);
+}
+
+.coloredDay p {
+  color: rgb(255, 107, 8);
+  font-weight: 600;
+}
+
+.coloredDay button {
+  color: #fff;
+}
+
+.closedMoreInfo button{
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.closedMoreInfo{
+  background-color: transparent;
+}
